@@ -1,0 +1,67 @@
+/* /public/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 0.5rem 0;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dashboard {
+    max-width: 700px;
+    margin: 2rem auto;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#tasksContainer {
+    margin-top: 2rem;
+}
+
+.task-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
+
+.task-card h4 {
+    margin: 0 0 0.5rem;
+}
+
+#searchSection {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}

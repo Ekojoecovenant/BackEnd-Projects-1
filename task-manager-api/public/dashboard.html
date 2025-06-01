@@ -1,0 +1,51 @@
+<!-- /public/dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="dashboard">
+        <header>
+            <h2>Your Tasks</h2>
+            <button id="logoutBtn">Logout</button>
+        </header>
+
+        <section id="taskFormSection">
+            <h3>Create Task</h3>
+            <form id="taskForm">
+                <input type="text" name="title" placeholder="Title" required />
+                <textarea name="description" placeholder="Description" required></textarea>
+                <select name="status">
+                    <option value="pending">Pending</option>
+                    <option value="in_progress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <section id="searchSection">
+            <input type="text" id="searchInput" placeholder="Search tasks..." />
+            <select id="statusFilter">
+                <option value="">All</option>
+                <option value="pending">Pending</option>
+                <option value="in_progress">In Progress</option>
+                <option value="completed">Completed</option>
+            </select>
+        </section>
+
+
+        <section id="tasksContainer">
+            <!-- Task cards will be rendered here -->
+        </section>
+    </div>
+
+    <script src="js/tasks.js"></script>
+</body>
+
+</html>
